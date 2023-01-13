@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $("#btnGuardar").hide();
 
             axios
-                .post("http://phplaravel-915525-3181396.cloudwaysapps.com/index/editar/" + info.event.id)
+                .post(baseURL + "/index/editar/" + info.event.id)
                 .then((respuesta) => {
                     const date = new Date();
                     const anio = date.getFullYear();
