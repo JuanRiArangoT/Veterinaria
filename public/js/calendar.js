@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //timeZone: 'America/Bogota',
 
-        events: "http://127.0.0.1:8000/consultar",
+        events: baseURL + "/index/consultar",
 
         dateClick: function (info) {
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $("#btnGuardar").hide();
 
             axios
-                .post("/index/editar/" + info.event.id)
+                .post(baseURL + "/index/editar/" + info.event.id)
                 .then((respuesta) => {
                     const date = new Date();
                     const anio = date.getFullYear();

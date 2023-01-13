@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //timeZone: 'America/Bogota',
 
-        events: baseURl + "/index/consultar",
+        events: baseURL + "/index/consultar",
 
         dateClick: function (info) {
 
