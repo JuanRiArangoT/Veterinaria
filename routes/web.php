@@ -21,12 +21,12 @@ Route::get('/', function () {
 
 Route::get('/index', [App\Http\Controllers\EventoController::class, 'index']);
 
-Route::get('/consultar', [App\Http\Controllers\EventoController::class, 'show']);
+Route::get('/index/consultar', [App\Http\Controllers\EventoController::class, 'show']);
 
-Route::get('/prueba/', [App\Http\Controllers\EventoController::class, 'create']);
+Route::get('/index/prueba/', [App\Http\Controllers\EventoController::class, 'create']);
 
 
-Route::post('/agregar', [App\Http\Controllers\EventoController::class, 'store']);
-Route::post('/editar/{id}', [App\Http\Controllers\EventoController::class, 'edit']);
-Route::post('/actualizar/{evento}', [App\Http\Controllers\EventoController::class, 'update']);
-Route::post('/eliminar/{id}', [App\Http\Controllers\EventoController::class, 'destroy']);
+Route::post('/index/agregar', [App\Http\Controllers\EventoController::class, 'store']);
+Route::post('/index/editar/{id}', [App\Http\Controllers\EventoController::class, 'edit']);
+Route::post('/index/actualizar/{evento}', [App\Http\Controllers\EventoController::class, 'update']);
+Route::post('/index/eliminar/{id}', [App\Http\Controllers\EventoController::class, 'destroy']);

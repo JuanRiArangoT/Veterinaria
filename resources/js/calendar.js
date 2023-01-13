@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //timeZone: 'America/Bogota',
 
-        events: "http://phplaravel-915525-3181396.cloudwaysapps.com/consultar",
+        events: "http://phplaravel-915525-3181396.cloudwaysapps.com/index/consultar",
 
         dateClick: function (info) {
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document
         .getElementById("btnGuardar")
         .addEventListener("click", function () {
-            enviarDatos("/agregar");
+            enviarDatos("/index/agregar");
         });
 
     document
