@@ -46,7 +46,7 @@ class EventoController extends Controller
         $hour  = $request->input('hourStart');
         $dateStart = $start. ' ' .$hour;
         //$validacion = DB::select('SELECT * FROM pruebaveterinaria.eventos where start = "'.$start.'" AND end = "'.$hour.'"');
-        $validacion = DB::select('SELECT * FROM pruebaveterinaria.eventos where start = "'.$dateStart.'"');
+        $validacion = DB::select('SELECT * FROM yywxxwryst.eventos where start = "'.$dateStart.'"');
         $collection = collect($validacion);
         $prueba = $collection->count();
 
