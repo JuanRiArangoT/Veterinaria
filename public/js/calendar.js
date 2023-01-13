@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         //timeZone: 'America/Bogota',
 
-        events: "http://phplaravel-915525-3181396.cloudwaysapps.com//index/consultar",
+        events: "http://phplaravel-915525-3181396.cloudwaysapps.com/index/consultar",
 
         dateClick: function (info) {
 
@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
             $("#btnGuardar").hide();
 
             axios
-                .post("http://phplaravel-915525-3181396.cloudwaysapps.com//index/editar/" + info.event.id)
+                .post("http://phplaravel-915525-3181396.cloudwaysapps.com/index/editar/" + info.event.id)
                 .then((respuesta) => {
                     const date = new Date();
                     const anio = date.getFullYear();
