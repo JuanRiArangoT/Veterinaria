@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/index', [App\Http\Controllers\EventoController::class, 'index']);
 
-Route::get('/index/consultar', [App\Http\Controllers\EventoController::class, 'show']);
+Route::get('/consultar', [App\Http\Controllers\EventoController::class, 'show']);
 
 Route::get('/index/prueba/', [App\Http\Controllers\EventoController::class, 'create']);
 
